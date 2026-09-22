@@ -1,0 +1,34 @@
+.stock-badge{
+
+padding:8px 15px;
+
+border-radius:20px;
+
+color:white;
+
+font-size:14px;
+
+font-weight:bold;
+
+display:inline-block;
+
+margin:10px 0;
+
+}
+
+.green{
+background:#28a745;
+}
+
+.yellow{
+background:#ffc107;
+color:black;
+}
+
+.red{
+background:#dc3545;
+}
+
+.black{
+background:#343a40;
+}

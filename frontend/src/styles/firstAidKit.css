@@ -1,0 +1,309 @@
+/* ===========================
+   First Aid Kit Page
+=========================== */
+
+.first-aid-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+}
+
+.first-aid-container h1 {
+  text-align: center;
+  color: #0F9D8A;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+/* ===========================
+   Question Form
+=========================== */
+
+.question-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.question-box label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.question-box input,
+.question-box select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.question-box input:focus,
+.question-box select:focus {
+  border-color: #0F9D8A;
+  box-shadow: 0 0 5px rgba(15, 157, 138, 0.4);
+}
+
+.question-card{
+    border-radius:15px;
+    padding:25px;
+}
+
+/* ===========================
+   Rule-Based Recommendation Panel
+=========================== */
+
+.kit-recommendation-panel {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 25px;
+}
+
+.kit-recommendation-panel h2 {
+  color: #0F9D8A;
+  margin-bottom: 6px;
+  font-size: 22px;
+}
+
+.kit-recommendation-subtitle {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.kit-recommendation-prompt {
+  color: #888;
+  font-style: italic;
+}
+
+.kit-recommendation-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.kit-recommendation-table th,
+.kit-recommendation-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+.kit-recommendation-table th {
+  color: #555;
+  font-weight: 700;
+  background: #f4f8fb;
+}
+
+.kit-recommendation-table td:last-child {
+  font-weight: 700;
+  color: #0F9D8A;
+}
+
+.kit-recommendation-multiplier-note {
+  margin-top: 14px;
+  color: #777;
+  font-size: 13px;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.suggest-btn,
+.kit-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  background: #0F9D8A;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.suggest-btn:hover,
+.kit-btn:hover {
+  background: #0c7f71;
+}
+
+/* ===========================
+   Suggested Items
+=========================== */
+
+.suggestions {
+  margin-top: 40px;
+}
+
+.suggestions h2 {
+  color: #0F9D8A;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.suggest-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.suggest-item:hover {
+  transform: translateY(-4px);
+}
+
+.suggest-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #f8f8f8;
+  padding: 10px;
+}
+
+.suggest-details {
+  flex: 1;
+}
+
+.suggest-details h3 {
+  color: #0F9D8A;
+  margin-bottom: 10px;
+}
+
+.suggest-details p {
+  margin: 6px 0;
+  color: #444;
+}
+
+.suggest-item-uses {
+  font-size: 13px;
+  color: #555;
+  margin: 4px 0;
+}
+
+.suggest-item-qty {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.suggest-item-qty .qty-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  background: #f8f8f8;
+  color: #0F9D8A;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.suggest-item-qty .qty-btn:hover {
+  background: #e6f6f3;
+}
+
+.suggest-item-qty span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.suggest-item-add-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #0F9D8A;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.suggest-item-add-btn:hover {
+  background: #0c8574;
+}
+
+.suggest-item-add-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* ===========================
+   Senior Citizen Mode
+=========================== */
+
+.senior .first-aid-container h1 {
+  font-size: 48px;
+}
+
+.senior .question-box label {
+  font-size: 22px;
+}
+
+.senior .question-box input,
+.senior .question-box select {
+  font-size: 22px;
+  padding: 18px;
+}
+
+.senior .suggest-btn,
+.senior .kit-btn {
+  font-size: 22px;
+  padding: 18px;
+}
+
+.senior .suggest-details h3 {
+  font-size: 28px;
+}
+
+.senior .suggest-details p {
+  font-size: 20px;
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media (max-width: 768px) {
+
+  .first-aid-container {
+    padding: 20px;
+  }
+
+  .suggest-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .suggest-item img {
+    margin-bottom: 15px;
+  }
+
+}
+.first-aid-error {
+  color: #dc3545;
+  margin-top: 10px;
+}

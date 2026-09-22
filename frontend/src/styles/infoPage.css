@@ -1,0 +1,136 @@
+.info-page {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 50px 30px 80px;
+}
+
+.info-page h1 {
+  color: #0F9D8A;
+  margin-bottom: 10px;
+}
+
+.info-page h2 {
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.info-page p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.info-intro {
+  font-size: 17px;
+  color: #333 !important;
+  margin-bottom: 25px !important;
+}
+
+.info-list {
+  padding-left: 20px;
+  color: #555;
+  line-height: 1.9;
+}
+
+/* FAQ */
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 12px;
+  padding: 18px 22px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+
+.faq-item.open {
+  border-left: 4px solid #0F9D8A;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #333;
+}
+
+.faq-answer {
+  margin-top: 12px;
+  margin-bottom: 0;
+  color: #666;
+}
+
+/* Contact Us */
+
+.contact-layout {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.contact-details,
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-details h3 {
+  color: #0F9D8A;
+  font-size: 14px;
+  margin-top: 18px;
+  margin-bottom: 4px;
+}
+
+.contact-details h3:first-child {
+  margin-top: 0;
+}
+
+.contact-form {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 13px;
+  background: #0F9D8A;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0b7d6d;
+}
+
+.contact-success {
+  color: #1b5e20;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 0;
+}

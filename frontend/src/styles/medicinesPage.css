@@ -1,0 +1,117 @@
+.medicines-page {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.medicines-filters {
+  width: 260px;
+  flex-shrink: 0;
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 20px;
+}
+
+.filters-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filters-header h3 {
+  color: #333;
+}
+
+.clear-filters-btn {
+  background: none;
+  border: none;
+  color: #0F9D8A;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.clear-filters-btn:hover {
+  text-decoration: underline;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.price-range-inputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.price-range-inputs input {
+  width: 0;
+  flex: 1;
+}
+
+.medicines-results {
+  flex: 1;
+  min-width: 0;
+}
+
+.medicines-results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.medicines-results-header h1 {
+  color: #0F9D8A;
+}
+
+.medicines-results-header p {
+  color: #888;
+  font-size: 14px;
+}
+
+.no-results {
+  text-align: center;
+  color: #999;
+  margin-top: 60px;
+}
+
+@media (max-width: 900px) {
+  .medicines-page {
+    flex-direction: column;
+  }
+
+  .medicines-filters {
+    width: 100%;
+    position: static;
+  }
+}

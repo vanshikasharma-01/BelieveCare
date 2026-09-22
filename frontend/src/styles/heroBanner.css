@@ -1,0 +1,105 @@
+/* .hero{
+
+height:350px;
+
+background:linear-gradient(135deg,#0F9D8A,#3BC4AE);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:20px;
+
+margin:25px;
+
+}
+
+.hero-content{
+
+text-align:center;
+
+color:white;
+
+}
+
+.hero-content h1{
+
+font-size:46px;
+
+margin-bottom:20px;
+
+color:white;
+
+}
+
+.hero-content p{
+
+font-size:22px;
+
+margin-bottom:30px;
+
+color:white;
+
+}
+
+.hero-content input{
+
+width:450px;
+
+padding:15px;
+
+border:none;
+
+border-radius:30px;
+
+font-size:18px;
+
+} */
+
+.hero{
+    width:100%;
+    height:300px;
+    background:linear-gradient(135deg,#0F9D8A,#3BC4AE);
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:35px;
+    box-shadow:0 6px 20px rgba(0,0,0,.15);
+}
+
+.hero-content{
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+.hero-btn{
+    background:white;
+    color:#0F9D8A;
+    border:none;
+    padding:15px 35px;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    background:#FFD54F;
+    color:#000;
+}

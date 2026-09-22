@@ -1,0 +1,141 @@
+.profile-container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px;
+}
+
+.profile-container h1{
+    text-align:center;
+    color:#0F9D8A;
+    margin-bottom:10px;
+}
+
+.profile-subtitle{
+    text-align:center;
+    color:gray;
+    margin-bottom:40px;
+}
+
+.profile-info{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:40px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.profile-avatar{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#0F9D8A;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:55px;
+}
+
+.profile-details h2{
+    color:#0F9D8A;
+    margin-bottom:10px;
+}
+
+.profile-details p{
+    margin:8px 0;
+}
+
+.edit-btn{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    background:#0F9D8A;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.edit-btn:hover{
+    background:#0b7d6d;
+}
+
+.profile-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.profile-card{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    text-decoration:none;
+    color:black;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.profile-card:hover{
+    transform:translateY(-6px);
+}
+
+.profile-card h2{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.profile-card h3{
+    color:#0F9D8A;
+    margin-bottom:10px;
+}
+
+.profile-card p{
+    color:gray;
+}
+
+.profile-details input{
+
+    width:320px;
+
+    display:block;
+
+    margin-bottom:15px;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+.save-btn{
+
+    background:#198754;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+.save-btn:hover{
+
+    background:#157347;
+
+}

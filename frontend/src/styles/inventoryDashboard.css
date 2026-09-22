@@ -1,0 +1,105 @@
+.inventory-container{
+    padding:40px;
+    background:#f8f9fa;
+    min-height:100vh;
+}
+
+.inventory-container h1{
+    text-align:center;
+    color:#0F9D8A;
+}
+
+.inventory-subtitle{
+    text-align:center;
+    color:gray;
+    margin-bottom:25px;
+}
+
+.inventory-search{
+    width:100%;
+    max-width:500px;
+    display:block;
+    margin:20px auto;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.inventory-filters{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:center;
+    margin:0 auto 25px auto;
+    max-width:900px;
+}
+
+.inventory-filter-select{
+    padding:10px 14px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:14px;
+    background:white;
+    color:#333;
+    min-width:160px;
+    cursor:pointer;
+}
+
+.inventory-filter-select:focus{
+    outline:none;
+    border-color:#0F9D8A;
+}
+
+.inventory-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.inventory-table th{
+    background:#0F9D8A;
+    color:white;
+    padding:15px;
+}
+
+.inventory-table td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+
+.inventory-table tr:hover{
+    background:#f1f1f1;
+}
+
+.inventory-edit-btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:13px;
+    font-weight:600;
+}
+
+.inventory-edit-btn:hover{
+    background:#1d4ed8;
+}
+
+.inventory-delete-btn{
+    background:#e53935;
+    color:white;
+    border:none;
+    padding:8px 16px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:13px;
+    font-weight:600;
+}
+
+.inventory-delete-btn:hover{
+    background:#c62828;
+}

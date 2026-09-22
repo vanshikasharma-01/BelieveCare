@@ -1,0 +1,49 @@
+.payment-container{
+    max-width:700px;
+    margin:60px auto;
+    padding:20px;
+}
+
+.payment-card{
+    background:white;
+    border-radius:15px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.success-icon{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.payment-card h1{
+    color:#0F9D8A;
+    margin-bottom:20px;
+}
+
+.payment-card p{
+    font-size:18px;
+    margin:10px 0;
+}
+
+.order-details{
+    background:#f8f9fa;
+    padding:20px;
+    border-radius:10px;
+    margin:25px 0;
+}
+
+.continue-btn{
+    padding:15px 35px;
+    border:none;
+    border-radius:8px;
+    background:#0F9D8A;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+}
+
+.continue-btn:hover{
+    background:#0b7d6d;
+}

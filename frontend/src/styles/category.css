@@ -1,0 +1,45 @@
+.categories{
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+padding:30px;
+
+flex-wrap:wrap;
+
+}
+
+.categories button{
+
+padding:12px 25px;
+
+border:none;
+
+background:#0F9D8A;
+
+color:white;
+
+border-radius:30px;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.categories button:hover{
+
+background:#08796b;
+
+}
+
+.active{
+
+background:#ff9800 !important;
+
+}

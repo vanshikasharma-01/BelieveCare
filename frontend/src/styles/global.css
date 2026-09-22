@@ -1,0 +1,86 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:30px;
+    align-items:stretch;
+}
+
+.senior{
+
+font-size:22px;
+
+}
+
+.senior button{
+
+font-size:20px;
+
+padding:18px;
+
+}
+
+.senior input{
+
+font-size:20px;
+
+padding:15px;
+
+}
+
+.senior .card{
+
+transform:scale(1.05);
+
+}
+
+.senior h1{
+
+font-size:55px;
+
+}
+
+.senior h2{
+
+font-size:35px;
+
+}
+
+.senior p{
+
+font-size:22px;
+
+}
+
+.home-layout{
+    display:flex;
+    align-items:flex-start;
+    gap:30px;
+    padding:30px;
+}
+
+.left-sidebar{
+    width:240px;
+    position:sticky;
+    top:120px;
+}
+
+.right-content{
+    flex:1;
+}

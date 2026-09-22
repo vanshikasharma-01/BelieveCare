@@ -1,0 +1,92 @@
+.scan-barcode-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.scan-barcode-main h1 {
+  color: #0F9D8A;
+  margin-bottom: 6px;
+}
+
+.scan-barcode-main p.scan-subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.scan-video-frame {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 3px solid #0F9D8A;
+  box-shadow: 0 4px 18px rgba(15, 157, 138, 0.25);
+}
+
+.scan-video-frame video {
+  width: 100%;
+  display: block;
+}
+
+.scan-result-card {
+  margin-top: 25px;
+  background: #f5f7fb;
+  border-radius: 10px;
+  padding: 18px 25px;
+  min-width: 260px;
+}
+
+.scan-result-card h3 {
+  margin: 0 0 6px 0;
+  color: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.scan-result-card .scan-code {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0F9D8A;
+}
+
+.scan-hint {
+  margin-top: 15px;
+  color: #888;
+  font-size: 14px;
+}
+
+.scan-manual-entry {
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scan-manual-note {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.scan-manual-btn {
+  padding: 12px 24px;
+  border: 2px solid #0F9D8A;
+  border-radius: 10px;
+  background: white;
+  color: #0F9D8A;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.scan-manual-btn:hover {
+  background: #0F9D8A;
+  color: white;
+}

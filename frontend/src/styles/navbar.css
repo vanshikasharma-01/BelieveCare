@@ -1,0 +1,319 @@
+/*
+.navbar{
+    background:#0F9D8A;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links li{
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#FFD54F;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.cart-icon{
+    color:white;
+    font-size:28px;
+    transition:.3s;
+}
+
+.cart-icon:hover{
+    color:#FFD54F;
+}  */
+
+.navbar{
+    display:flex;
+    flex-direction:column;
+    background:#0F9D8A;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+    position:relative;
+    z-index:100;
+}
+
+/* Top row — Logo (left) | Search (center) | Icons (right) */
+.navbar-top{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:15px 30px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    flex:0 0 auto;
+}
+
+.logo img{
+    height:44px;
+    width:auto;
+    max-width:180px;
+    object-fit:contain;
+    border-radius:8px;
+    background:transparent;
+    padding:0;
+    transform: scale(1.6);
+    transform-origin:left center;
+}
+
+.navbar-search{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.navbar-search input{
+    width:100%;
+    max-width:500px;
+    padding:12px 18px;
+    border:none;
+    border-radius:30px;
+    outline:none;
+    font-size:16px;
+}
+
+.top-icons{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    flex:0 0 auto;
+}
+
+.icon{
+    color:white;
+    font-size:26px;
+    transition:.3s;
+}
+
+.icon:hover{
+    color:#FFD54F;
+}
+
+/* Enlarged nav icons while Senior Mode is on (task: bigger tap
+   target / more visible icons for senior users). Applied directly via
+   a class on the Link, so it works regardless of which page/wrapper
+   the Navbar is rendered inside. Cart, wishlist, and profile icons
+   all match the same enlarged size. */
+.icon.senior-enlarged{
+    font-size:40px;
+}
+
+.nav-arrow-btn.senior-enlarged{
+    width:44px;
+    height:44px;
+    font-size:22px;
+}
+
+/* Controls row — Senior Mode toggle + Language toggle, side by side,
+   sitting under the icons on the right (matches the icon row above). */
+.navbar-controls{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:15px;
+    padding:0 30px 12px;
+}
+
+.senior-toggle{
+    color:white;
+}
+
+.language-toggle button{
+
+    padding:8px 16px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:white;
+
+    color:#0F9D8A;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.language-toggle button:hover{
+
+    background:#f1f1f1;
+
+}
+/* --- Category Mega Menu --- */
+
+.navbar-categories{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    background:#0b7d6d;
+    padding:10px 30px;
+    position:relative;
+}
+
+/* Back / Forward history buttons — pinned to the left corner of the
+   category row, beside the category links. */
+.navbar-history-nav{
+    position:absolute;
+    left:20px;
+    top:50%;
+    transform:translateY(-50%);
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.nav-arrow-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:28px;
+    height:28px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+    color:white;
+    font-size:13px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.nav-arrow-btn:hover{
+    background:rgba(255,255,255,.3);
+    color:#FFD54F;
+}
+
+.nav-category-link{
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    padding:4px 0;
+    transition:.2s;
+}
+
+.nav-category-link:hover{
+    color:#FFD54F;
+}
+
+.nav-category-link.senior-enlarged{
+    font-size:21px;
+}
+
+/* Highlights whichever category page is currently open. */
+.nav-category-link.active{
+    color:#FFD54F;
+    border-bottom:3px solid #FFD54F;
+}
+
+.nav-category-dropdown{
+    position:relative;
+}
+
+.nav-category-dropdown:hover .nav-category-menu{
+    display:flex;
+}
+
+.nav-category-menu{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:white;
+    border-radius:0 0 10px 10px;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    min-width:200px;
+    padding:8px 0;
+    z-index:200;
+}
+
+.nav-category-menu a{
+    color:#333;
+    text-decoration:none;
+    padding:10px 20px;
+    font-size:14px;
+    transition:.15s;
+}
+
+.nav-category-menu a:hover{
+    background:#f5f7fb;
+    color:#0F9D8A;
+}
+
+@media (max-width: 900px){
+
+    .navbar-categories{
+        flex-wrap:wrap;
+        gap:15px;
+        padding:10px 15px 10px 60px;
+    }
+
+    .navbar-history-nav{
+        left:10px;
+    }
+
+    .navbar-top{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .navbar-search{
+        order:1;
+        width:100%;
+    }
+
+    .navbar-search input{
+        width:100%;
+    }
+
+    .top-icons{
+        order:2;
+    }
+
+    .navbar-controls{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+}
